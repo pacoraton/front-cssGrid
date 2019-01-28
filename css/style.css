@@ -45,3 +45,58 @@ header{
 .barra nav a:hover{
     color: var(--secundario);
 }
+
+h1{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    color:var(--secundario);
+    font-size: 3rem;
+}
+
+.contenedor{
+    max-width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+img{
+    max-width: 100%;
+}
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+/*de 768 pixeles en adelante*/
+@media (min-width:768px){
+    .listado-productos{
+        grid-template-columns: repeat(3,1fr);
+       
+    }
+    h1{
+        color: black;
+    }
+    
+}
+.listado-productos .producto{
+    background-color: var(--primarioObscuro);
+    padding: 2rem;
+}
+
+.contenido-producto p{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    color: white;
+    line-height: 1.2;
+    margin: 1rem 0;
+}
+
+.titulo-producto{
+    font-size: 4rem;
+}
+
+.precio{
+    font-size: 2.8rem;
+    color: var(--secundario)!important;
+}

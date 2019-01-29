@@ -52,6 +52,11 @@ h1{
     color:var(--secundario);
     font-size: 3rem;
 }
+p{
+   font-size: 1.8rem;
+   font-family: Arial, Helvetica, sans-serif; 
+   color: #ffffff;
+}
 
 .contenedor{
     max-width: 1000px;
@@ -74,10 +79,7 @@ img{
         grid-template-columns: repeat(3,1fr);
        
     }
-    h1{
-        color: black;
-    }
-    
+   
 }
 .listado-productos .producto{
     background-color: var(--primarioObscuro);
@@ -125,4 +127,62 @@ background-position: center center;
         grid-row: 5/6;
         grid-column: 2/4;
     }
+}
+
+
+
+@media (min-width:768px){
+    .contenedor-informacion{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        grid-column-gap: 2rem;
+    }
+}
+
+footer{
+    background-color: var(--primarioObscuro);
+    padding: 1rem 0;
+    margin-top: 2 rem;
+}
+.copyright{
+ text-align: center;
+ font-family: var(--fuentePrincipal);
+ color: white;
+ font-size: 2.2rem;
+}
+
+.formulario-pedido{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,6rem);
+    grid-gap: 1rem;
+}
+
+.campo{
+    background-color: transparent;
+    border: 5px solid #ffffff;
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    padding: 1rem;
+    width: 100%;
+    color: gray;
+    text-align: center;
+    
+}
+.boton{
+    background-color: var(--secundario);
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    border: none;
+    transition: .3s ease;
+    grid-column: 1/4;
+}
+
+.boton:hover{
+    cursor:pointer;
+    background-color: rgb(233, 187, 2);
+}
+
+.talla{
+    grid-column: 1/3;
 }
